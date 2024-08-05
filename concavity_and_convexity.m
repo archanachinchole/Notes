@@ -1,0 +1,13 @@
+clc;clear all;close all;
+syms x;
+f=inline('log(x)','x');
+g=diff(f(x),x);
+h=diff(g);
+x1=1:100;
+plot(x1,f(x1));
+title('graph of fun is log(x)');
+xlable('x');
+ylable('f(x)=log(x)');
+n=lenght(n,1);
+z=zeros(n,1);
+t=0;
